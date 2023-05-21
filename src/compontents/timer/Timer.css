@@ -2,7 +2,34 @@
 @import url(https://fonts.googleapis.com/css?family=Bungee);
 @import url(https://fonts.googleapis.com/css?family=Outfit);
 
+.timer-components{
+    display: flex;
+    align-items:center;
+    gap:50px;
+}
+
+.streak-counter{
+    margin-top: 100px;
+    color: azure;
+    font-family: Bungee;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 3px 10px rgb(0 0 0 / 0.6);  
+    
+}
+
+.streak-count{
+    margin-top: -100px;
+    font-size: 100px;
+    text-shadow: 1px 3px 10px rgb(0 0 0 / 0.6);  
+    margin-left: 90px;
+}
+
 .timer-container{
+    margin-left: 350px;
     background-color: rgb(224, 71, 71);
     width: 700px;
     height: 450px;
