@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Inter);
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+@import url(https://fonts.googleapis.com/css?family=Outfit);
+
+.timer-container{
+    background-color: rgb(224, 71, 71);
+    width: 700px;
+    height: 450px;
+    border: 1px #f5e9e9da;
+    border-style: solid;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Outfit;
+    color: azure;
+    stroke: slategrey;
+    stroke-width: 10px; 
+    box-shadow: 1px 3px 10px rgb(0 0 0 / 0.6);  
+    margin-top: 100px;
+}
+
+.focus-text{
+    font-family: Bungee;
+    font-size: 65px;
+    margin-top:-100px;
+}
+
+.time{
+    font-size:150px;
+    margin-top: fill;
+}
+
+.PauseTimer{
+    background-color: white;
+    color:rgb(109, 108, 108);
+    height: 50px;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 0.6);
+    width: 200px;
+    font-size: 25px;
+    border-color: gainsboro;
+    font-family: Outfit;
+    border-radius: 25px;
+    font-weight: 100px;
+    transition-duration: 0.4s;
+}
+
+.PauseTimer:hover {
+    background-color: #969696; /* Green */
+    color: white;
+  }

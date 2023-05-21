@@ -5,11 +5,11 @@ function Timer() {
     const [pause,setPause]=useState(true);
     const [timerState,setTimerState]=useState("Start");
     const [studyState,setFocusState]=useState("Focus!");
-    const [formattedTime,setFormattedTime]=useState("00:00");
+    const [formattedTime,setFormattedTime]=useState("05:00");
    
     useEffect(() => {
         // exit early when we reach 0
-        if (!time){
+        if (time<0){
             toggleStudyState();
         }
         if(pause === true){
@@ -25,12 +25,12 @@ function Timer() {
     function toggleStudyState(){
         if(studyState=="Focus!"){
             setFocusState("Break Time");
-            setTime(5);
+            setTime(60);
             togglePause();
             return;
         }
         setFocusState("Focus!");
-        setTime(25);
+        setTime(300);
         togglePause();
         return;
 
@@ -53,13 +53,16 @@ function Timer() {
 
     return (
        <div>
-         <div className="timer-container">
-            <section><div className="focus-text">{studyState}</div></section>
-            <div className="time">{formattedTime}</div>
-            <button className="PauseTimer" onClick={togglePause}>{timerState}</button>
-        </div>
-        
-
+         <div className="timer-components">
+            <div>
+                {/* Streak: */}
+            </div>
+             <div className="timer-container">
+                 <section><div className="focus-text">{studyState}</div></section>
+                <div className="time">{formattedTime}</div>
+                <button className="PauseTimer" onClick={togglePause}>{timerState}</button>
+             </div>
+         </div>
        </div>
     );
   }
